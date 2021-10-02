@@ -46,6 +46,8 @@ class PurchaseController extends AbstractController
             'user' => $this->getUser()
         ]);
 
+        //bleh
+
         return $this->render('purchase/index.html.twig',
             ['cart' => $cartService->getFullCart($purchase),
                 'form' => $form->createView()
